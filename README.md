@@ -32,7 +32,6 @@ This sample app stores a [dashboard layout](https://docs.devexpress.com/VCL/dxDa
 * [TdxBackendDataSetJSONConnection](https://docs.devexpress.com/VCL/dxBackend.ConnectionString.JSON.DataSet.TdxBackendDataSetJSONConnection)
 
 <!-- feedback -->
-
 ## Does this example address your development requirements/objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=vcl-dashboards-store-layout-template-database&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=vcl-dashboards-store-layout-template-database&~~~was_helpful=no)
