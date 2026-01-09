@@ -14,7 +14,7 @@ This sample app stores a [dashboard layout](https://docs.devexpress.com/VCL/dxDa
 ## Prerequisites
 
 * Microsoft Windows 10 or newer
-* Embarcadero RAD Studio IDE 10.4 (Sydney) or newer (Community Edition is not supported)
+* Embarcadero RAD Studio IDE 12.3 (Athens) or newer (Community Edition is not supported)
 * DevExpress VCL Components v25.2.3 or newer
 
 ## Test the Example
