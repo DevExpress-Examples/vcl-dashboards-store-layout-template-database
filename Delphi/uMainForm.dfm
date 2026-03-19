@@ -1,7 +1,7 @@
 object MainForm: TMainForm
   Left = 0
   Top = 0
-  Caption = 'MainForm'
+  Caption = 'DevExpress VCL: Store Dashboard Layout in a Database'
   ClientHeight = 536
   ClientWidth = 843
   Color = clBtnFace
@@ -20,8 +20,8 @@ object MainForm: TMainForm
     Align = alClient
     TabOrder = 0
     AutoSize = True
-    ExplicitWidth = 833
-    ExplicitHeight = 504
+    ExplicitWidth = 837
+    ExplicitHeight = 519
     object btnDesign: TcxButton
       Left = 287
       Top = 12

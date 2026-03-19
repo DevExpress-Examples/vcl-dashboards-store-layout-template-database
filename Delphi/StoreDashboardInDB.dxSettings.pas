@@ -14,7 +14,7 @@
 {                                                                      }
 {**********************************************************************}
 
-unit DashboardTemplate.dxSettings;
+unit StoreDashboardInDB.dxSettings;
 
 {$I cxVer.inc}
 

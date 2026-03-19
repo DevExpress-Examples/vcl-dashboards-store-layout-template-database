@@ -1,4 +1,4 @@
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <PropertyGroup>
         <ProjectGuid>{C8FCB972-B167-4D60-AB2D-37E035C49AE4}</ProjectGuid>
         <ProjectVersion>20.3</ProjectVersion>
@@ -6,10 +6,10 @@
         <Base>True</Base>
         <Config Condition="'$(Config)'==''">Debug</Config>
         <Platform Condition="'$(Platform)'==''">Win32</Platform>
-        <ProjectName Condition="'$(ProjectName)'==''">DashboardTemplate</ProjectName>
+        <ProjectName Condition="'$(ProjectName)'==''">StoreDashboardInDB</ProjectName>
         <TargetedPlatforms>3</TargetedPlatforms>
         <AppType>Application</AppType>
-        <MainSource>DashboardTemplate.dpr</MainSource>
+        <MainSource>StoreDashboardInDB.dpr</MainSource>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
         <Base>true</Base>
@@ -70,7 +70,7 @@
         <Icon_MainIcon>$(BDS)\bin\delphi_PROJECTICON.ico</Icon_MainIcon>
         <UWP_DelphiLogo44>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_44.png</UWP_DelphiLogo44>
         <UWP_DelphiLogo150>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_150.png</UWP_DelphiLogo150>
-        <SanitizedProjectName>DashboardTemplate</SanitizedProjectName>
+        <SanitizedProjectName>StoreDashboardInDB</SanitizedProjectName>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Win32)'!=''">
         <DCC_UsePackage>dxPScxCommonRS29;dxPSdxChartControlLnkRS29;dxRibbonRS29;vclwinx;DataSnapServer;dxPScxExtCommonRS29;dxRichEditControlCoreRS29;fmx;dxSpreadSheetReportDesignerRS29;vclie;DbxCommonDriver;bindengine;IndyIPCommon;VCLRESTComponents;DBXMSSQLDriver;FireDACCommonODBC;emsclient;dxComnRS29;dxFlowChartDesignerRS29;appanalytics;IndyProtocols;vclx;Skia.Package.RTL;dxBarExtDBItemsRS29;dbxcds;vcledge;cxVerticalGridRS29;FmxTeeUI;cxFireDACAdaptersRS29;dxPSDBTeeChartRS29;cxSchedulerWebServiceStorageRS29;DBXFirebirdDriver;dxRichEditControlRS29;dxPsPrVwAdvRS29;FireDACSqliteDriver;DbxClientDriver;dxPSdxGaugeControlLnkRS29;soapmidas;dxRibbonCustomizationFormRS29;TeeUI;dbexpress;dxEMFRS29;dxDockingRS29;inet;vcltouch;dxPSdxFCLnkRS29;dxorgcRS29;FireDACDBXDriver;dxSpreadSheetCoreConditionalFormattingDialogsRS29;fmxdae;dxPSRichEditControlLnkRS29;dxPSdxSpreadSheetLnkRS29;CustomIPTransport;FireDACMSSQLDriver;cxADOAdaptersRS29;madExcept_;dxPSPrVwRibbonRS29;IndySystem;dxPScxTLLnkRS29;dxPSdxDBOCLnkRS29;dxGDIPlusRS29;ibxbindings;vclFireDAC;madDisAsm_;dxPSCoreRS29;dxSpreadSheetRS29;FireDACCommon;DataSnapServerMidas;FireDACODBCDriver;emsserverresource;cxGridEMFRS29;dxPSdxMapControlLnkRS29;dxGanttControlRS29;dxPScxVGridLnkRS29;dxPScxPivotGridLnkRS29;dxWizardControlRS29;dxADOServerModeRS29;bindcompdbx;rtl;FireDACMySQLDriver;dxCloudServiceLibraryRS29;cxIBXAdaptersRS29;dxServerModeRS29;DBXSqliteDriver;dxBarDBNavRS29;DBXSybaseASEDriver;dxSpreadSheetCoreRS29;dxNavBarRS29;vclimg;DataSnapFireDAC;inetdbxpress;FireDAC;xmlrtl;ibxpress;dxFireDACEMFRS29;dsnap;FireDACDb2Driver;dxPSdxLCLnkRS29;DBXOracleDriver;DBXInformixDriver;vclib;fmxobj;bindcompvclsmp;DataSnapNativeClient;DatasnapConnectorsFreePascal;dxPSLnksRS29;dxmdsRS29;dxPSdxOCLnkRS29;cxSchedulerGridRS29;dxPScxSchedulerLnkRS29;emshosting;dxADOEMFRS29;dxChartControlRS29;dxPSdxDBTVLnkRS29;FireDACCommonDriver;dxGaugeControlRS29;IndyIPClient;dxPDFViewerRS29;bindcompvclwinx;dxOrgChartAdvancedCustomizeFormRS29;emsedge;bindcompfmx;dxBarExtItemsRS29;madBasic_;dxReportsRS29;dxFlowChartLayoutsRS29;inetdb;dxdborRS29;ibmonitor;FireDACASADriver;Tee;dxPScxGridLnkRS29;cxPivotGridChartRS29;vclactnband;fmxFireDAC;FireDACInfxDriver;dxRichEditCoreRS29;cxTreeListdxBarPopupMenuRS29;DBXMySQLDriver;dxFlowChartAdvancedCustomizeFormRS29;VclSmp;cxSchedulerRibbonStyleEventEditorRS29;DataSnapCommon;dxPSTeeChartRS29;fmxase;dxtrmdRS29;dxFlowChartRS29;DBXOdbcDriver;dbrtl;dxPScxPCProdRS29;FireDACOracleDriver;Skia.Package.FMX;TeeDB;FireDACMSAccDriver;cxGridRS29;dxSpellCheckerRS29;DataSnapIndy10ServerTransport;dxRichEditDocumentModelRS29;dxMapControlRS29;DataSnapConnectors;vcldsnap;DBXInterBaseDriver;FireDACMongoDBDriver;FireDACTDataDriver;cxLibraryRS29;Skia.Package.VCL;vcldb;dxPSdxPDFViewerLnkRS29;cxSchedulerTreeBrowserRS29;bindcomp;dxTabbedMDIRS29;cxExportRS29;inetstn;IndyCore;RESTBackendComponents;dxHttpIndyRequestRS29;dxTileControlRS29;dxFireDACServerModeRS29;cxPivotGridOLAPRS29;FireDACADSDriver;RESTComponents;IndyIPServer;vcl;dsnapxml;adortl;dsnapcon;DataSnapClient;DataSnapProviderClient;dxCoreRS29;cxPivotGridRS29;dxdbtrRS29;DBXDb2Driver;dxSkinsCoreRS29;emsclientfiredac;FireDACPgDriver;FireDACDSDriver;dxBarRS29;tethering;bindcompvcl;CloudService;DBXSybaseASADriver;dxSpreadSheetConditionalFormattingDialogsRS29;cxTreeListRS29;FMXTee;soaprtl;cxSchedulerRS29;dxDBXServerModeRS29;soapserver;FireDACIBDriver;$(DCC_UsePackage)</DCC_UsePackage>
@@ -140,7 +140,7 @@ $(PostBuildEvent)]]></PostBuildEvent>
             <FormType>dfm</FormType>
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>
-        <DCCReference Include="DashboardTemplate.dxSettings.pas"/>
+        <DCCReference Include="StoreDashboardInDB.dxSettings.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
@@ -159,19 +159,19 @@ $(PostBuildEvent)]]></PostBuildEvent>
         <BorlandProject>
             <Delphi.Personality>
                 <Source>
-                    <Source Name="MainSource">DashboardTemplate.dpr</Source>
+                    <Source Name="MainSource">StoreDashboardInDB.dpr</Source>
                 </Source>
                 <Excluded_Packages>
-                    <Excluded_Packages Name="$(BDSBIN)\bcboffice2k290.bpl">Embarcadero C++Builder Office 2000 Servers Package</Excluded_Packages>
-                    <Excluded_Packages Name="$(BDSBIN)\bcbofficexp290.bpl">Embarcadero C++Builder Office XP Servers Package</Excluded_Packages>
-                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k290.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
-                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp290.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\bcboffice2k370.bpl">Embarcadero C++Builder Office 2000 Servers Package</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\bcbofficexp370.bpl">Embarcadero C++Builder Office XP Servers Package</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k370.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp370.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
                 </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="5">
-                <DeployFile LocalName="Win32\Debug\DashboardTemplate.exe" Configuration="Debug" Class="ProjectOutput">
+                <DeployFile LocalName="Win32\Debug\StoreDashboardInDB.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
-                        <RemoteName>DashboardTemplate.exe</RemoteName>
+                        <RemoteName>StoreDashboardInDB.exe</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -1141,8 +1141,7 @@ $(PostBuildEvent)]]></PostBuildEvent>
         <PreBuildEventIgnoreExitCode>False</PreBuildEventIgnoreExitCode>
         <PreLinkEvent/>
         <PreLinkEventIgnoreExitCode>False</PreLinkEventIgnoreExitCode>
-        <PostBuildEvent>copy /Y &quot;$(BDS)\Redist\win32\WebView2Loader.dll&quot; $(OUTPUTDIR)
-</PostBuildEvent>
+        <PostBuildEvent>copy /Y &quot;$(BDS)\Redist\win32\WebView2Loader.dll&quot; $(OUTPUTDIR)</PostBuildEvent>
         <PostBuildEventIgnoreExitCode>False</PostBuildEventIgnoreExitCode>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Config)'=='Debug' And '$(Platform)'=='Win64'">
@@ -1150,8 +1149,7 @@ $(PostBuildEvent)]]></PostBuildEvent>
         <PreBuildEventIgnoreExitCode>False</PreBuildEventIgnoreExitCode>
         <PreLinkEvent/>
         <PreLinkEventIgnoreExitCode>False</PreLinkEventIgnoreExitCode>
-        <PostBuildEvent>copy /Y &quot;$(BDS)\Redist\win64\WebView2Loader.dll&quot; $(OUTPUTDIR)
-</PostBuildEvent>
+        <PostBuildEvent>copy /Y &quot;$(BDS)\Redist\win64\WebView2Loader.dll&quot; $(OUTPUTDIR)</PostBuildEvent>
         <PostBuildEventIgnoreExitCode>False</PostBuildEventIgnoreExitCode>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Config)'=='Release' And '$(Platform)'=='Win32'">
@@ -1159,8 +1157,7 @@ $(PostBuildEvent)]]></PostBuildEvent>
         <PreBuildEventIgnoreExitCode>False</PreBuildEventIgnoreExitCode>
         <PreLinkEvent/>
         <PreLinkEventIgnoreExitCode>False</PreLinkEventIgnoreExitCode>
-        <PostBuildEvent>copy /Y &quot;$(BDS)\Redist\win32\WebView2Loader.dll&quot; $(OUTPUTDIR)
-</PostBuildEvent>
+        <PostBuildEvent>copy /Y &quot;$(BDS)\Redist\win32\WebView2Loader.dll&quot; $(OUTPUTDIR)</PostBuildEvent>
         <PostBuildEventIgnoreExitCode>False</PostBuildEventIgnoreExitCode>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Config)'=='Release' And '$(Platform)'=='Win64'">
@@ -1168,8 +1165,7 @@ $(PostBuildEvent)]]></PostBuildEvent>
         <PreBuildEventIgnoreExitCode>False</PreBuildEventIgnoreExitCode>
         <PreLinkEvent/>
         <PreLinkEventIgnoreExitCode>False</PreLinkEventIgnoreExitCode>
-        <PostBuildEvent>copy /Y &quot;$(BDS)\Redist\win64\WebView2Loader.dll&quot; $(OUTPUTDIR)
-</PostBuildEvent>
+        <PostBuildEvent>copy /Y &quot;$(BDS)\Redist\win64\WebView2Loader.dll&quot; $(OUTPUTDIR)</PostBuildEvent>
         <PostBuildEventIgnoreExitCode>False</PostBuildEventIgnoreExitCode>
     </PropertyGroup>
 </Project>
