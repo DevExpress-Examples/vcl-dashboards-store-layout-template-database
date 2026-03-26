@@ -2,8 +2,8 @@ object MainForm: TMainForm
   Left = 0
   Top = 0
   Caption = 'DevExpress VCL: Store Dashboard Layout in a Database'
-  ClientHeight = 726
-  ClientWidth = 1222
+  ClientHeight = 536
+  ClientWidth = 843
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -15,15 +15,17 @@ object MainForm: TMainForm
   object dxLayoutControl1: TdxLayoutControl
     Left = 0
     Top = 0
-    Width = 1222
-    Height = 726
+    Width = 843
+    Height = 536
     Align = alClient
     TabOrder = 0
     AutoSize = True
+    ExplicitWidth = 837
+    ExplicitHeight = 519
     object btnDesign: TcxButton
-      Left = 414
+      Left = 287
       Top = 12
-      Width = 394
+      Width = 269
       Height = 25
       Caption = 'Design Dashboard'
       SpeedButtonOptions.CanBeFocused = False
@@ -33,7 +35,7 @@ object MainForm: TMainForm
     object cxGrid2: TcxGrid
       Left = 12
       Top = 44
-      Width = 1198
+      Width = 819
       Height = 133
       TabOrder = 3
       object gvLayouts: TcxGridDBTableView
@@ -82,30 +84,28 @@ object MainForm: TMainForm
     object dxDashboardControl1: TdxDashboardControl
       Left = 12
       Top = 184
-      Width = 1198
-      Height = 530
-      DashboardName = 'Test'
-      Parameters = <>
+      Width = 819
+      Height = 340
       TabOrder = 4
       OnLayoutChanged = dxDashboardControl1LayoutChanged
       OnStateChanged = dxDashboardControl1StateChanged
       DesignSize = (
-        1198
-        530)
+        819
+        340)
     end
     object btnNewDashboard: TcxButton
       Left = 12
       Top = 12
-      Width = 395
+      Width = 268
       Height = 25
       Caption = 'New Dashboard'
       TabOrder = 0
       OnClick = btnNewDashboardClick
     end
     object btnDelete: TcxButton
-      Left = 815
+      Left = 563
       Top = 12
-      Width = 395
+      Width = 268
       Height = 25
       Caption = 'Delete Dashboard'
       TabOrder = 2
@@ -179,7 +179,6 @@ object MainForm: TMainForm
     end
   end
   object dxReport1: TdxReport
-    Parameters = <>
     Left = 48
     Top = 88
   end

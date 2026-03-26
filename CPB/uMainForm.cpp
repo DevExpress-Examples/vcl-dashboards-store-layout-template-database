@@ -142,7 +142,8 @@ void __fastcall TMainForm::dxDashboardControl1StateChanged(
 	DataModule1->mdLayouts->Edit();
 	DataModule1->mdLayoutsState->Assign(dxDashboardControl1->State);
 	DataModule1->mdLayouts->Post();
-}
+}
+
 //---------------------------------------------------------------------------
 
 

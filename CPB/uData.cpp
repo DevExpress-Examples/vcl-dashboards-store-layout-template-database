@@ -25,7 +25,7 @@
 #pragma resource "*.dfm"
 TDataModule1 *DataModule1;
 //---------------------------------------------------------------------------
-const String DataFileName = "..\\..\\data.dat";
+const String DataFileName = "data.dat";
 
 
 __fastcall TDataModule1::TDataModule1(TComponent* Owner)
