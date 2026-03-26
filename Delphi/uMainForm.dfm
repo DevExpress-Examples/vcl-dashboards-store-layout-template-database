@@ -20,8 +20,6 @@ object MainForm: TMainForm
     Align = alClient
     TabOrder = 0
     AutoSize = True
-    ExplicitWidth = 837
-    ExplicitHeight = 519
     object btnDesign: TcxButton
       Left = 287
       Top = 12
@@ -86,7 +84,6 @@ object MainForm: TMainForm
       Top = 184
       Width = 819
       Height = 340
-      DashboardName = 'Test'
       Parameters = <>
       TabOrder = 4
       OnLayoutChanged = dxDashboardControl1LayoutChanged

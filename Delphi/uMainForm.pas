@@ -7,19 +7,19 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, cxClasses, dxReport, cxGraphics,
   cxLookAndFeels, cxLookAndFeelPainters, Vcl.Menus,  cxButtons,
   cxControls, cxStyles, cxCustomData, cxFilter, cxData,
-  cxDataStorage, cxEdit, cxNavigator, dxDateRanges, dxScrollbarAnnotations,
+  cxDataStorage, cxEdit, cxNavigator, dxScrollbarAnnotations,
   Data.DB, cxDBData, cxGridLevel, cxGridCustomView, cxGridCustomTableView,
-  cxGridTableView, cxGridDBTableView, cxGrid, FireDAC.Comp.DataSet,
-  FireDAC.Comp.Client,
-  Vcl.StdCtrls, dxmdaset, uData,
-  dxLayoutControlAdapters, dxLayoutContainer, dxLayoutControl,
-  dxBackend.Utils.WebBrowserForm, dxDashboard.Control, dxAI,
-  dxAI.Commands.SmartPaste, cxTextEdit, cxMaskEdit;
+  cxGridTableView, cxGridDBTableView, cxGrid,
+  Vcl.StdCtrls, dxmdaset, dxLayoutControlAdapters, dxLayoutContainer, dxLayoutControl,
+  dxBackend.Utils.WebBrowserForm, dxDashboard.Control, cxTextEdit, cxMaskEdit;
+
 
 type
   TMainForm = class(TForm)
     dxReport1: TdxReport;
+    btnNewDashboard: TcxButton;
     btnDesign: TcxButton;
+    btnDelete: TcxButton;
     gvLayouts: TcxGridDBTableView;
     cxGrid2Level1: TcxGridLevel;
     cxGrid2: TcxGrid;
@@ -28,26 +28,22 @@ type
     gvLayoutsName: TcxGridDBColumn;
     dxLayoutControl1Group_Root: TdxLayoutGroup;
     dxLayoutControl1: TdxLayoutControl;
-    liBtnShowDesigner: TdxLayoutItem;
-    liGrid: TdxLayoutItem;
     dxDashboardControl1: TdxDashboardControl;
-    liDashboardControl: TdxLayoutItem;
-    btnNewDashboard: TcxButton;
-    liBtnNew: TdxLayoutItem;
     lgButtons: TdxLayoutGroup;
-    btnDelete: TcxButton;
+    liBtnNew: TdxLayoutItem;
+    liBtnShowDesigner: TdxLayoutItem;
     liBtnDelete: TdxLayoutItem;
-    procedure btnDesignClick(Sender: TObject);
-    procedure dxDashboardControl1LayoutChanged(
-      ASender: TdxCustomDashboardControl);
-    procedure dxDashboardControl1StateChanged(
-      ASender: TdxCustomDashboardControl);
+    liGrid: TdxLayoutItem;
+    liDashboardControl: TdxLayoutItem;
     procedure btnNewDashboardClick(Sender: TObject);
+    procedure btnDesignClick(Sender: TObject);
+    procedure btnDeleteClick(Sender: TObject);
+    procedure dxDashboardControl1LayoutChanged(ASender: TdxCustomDashboardControl);
+    procedure dxDashboardControl1StateChanged(ASender: TdxCustomDashboardControl);
     procedure gvLayoutsFocusedRecordChanged(Sender: TcxCustomGridTableView;
       APrevFocusedRecord, AFocusedRecord: TcxCustomGridRecord;
       ANewItemRecordFocusingChanged: Boolean);
     procedure FormCreate(Sender: TObject);
-    procedure btnDeleteClick(Sender: TObject);
     procedure gvLayoutsEditValueChanged(Sender: TcxCustomGridTableView;
       AItem: TcxCustomGridTableItem);
     procedure gvLayoutsNamePropertiesValidate(Sender: TObject;
@@ -66,6 +62,8 @@ var
 implementation
 
 {$R *.dfm}
+
+uses uData;
 
 procedure TMainForm.FormCreate(Sender: TObject);
 begin
