@@ -15,7 +15,6 @@ type
     mdLayoutsLayout: TBlobField;
     mdLayoutsName: TWideStringField;
     dxBackendDataConnectionManager1: TdxBackendDataConnectionManager;
-    ReportsNWindConnectionString: TdxBackendDatabaseSQLConnection;
     dxSkinController1: TdxSkinController;
     mdRevenueByIndustry: TdxMemData;
     mdRevenueByIndustryCity: TStringField;
@@ -44,7 +43,7 @@ implementation
 
 {$R *.dfm}
 const
-  DataFileName = '..\..\data.dat';
+  DataFileName = 'data.dat';
 
 procedure TDataModule1.DataModuleCreate(Sender: TObject);
 begin
