@@ -24,7 +24,6 @@ __published:	// IDE-managed Components
 	TBlobField *mdLayoutsState;
 	TDataSource *dsLayouts;
 	TdxBackendDataConnectionManager *dxBackendDataConnectionManager1;
-	TdxBackendDatabaseSQLConnection *ReportsNWindConnectionString;
 	TdxBackendDataSetJSONConnection *RevenueByIndustryConnection;
 	TdxBackendDataSetCollectionItem *RevenueByIndustryConnectionItem1;
 	TdxSkinController *dxSkinController1;
