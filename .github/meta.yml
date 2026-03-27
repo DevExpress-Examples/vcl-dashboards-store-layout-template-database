@@ -2,5 +2,4 @@
 url: vcl-dashboards-store-layout-template-database
 website: https://docs.devexpress.com/VCL/405642/ExpressDashboards/vcl-dashboards
 tags: [vcl, dashboards, layout, database]
-description: |
-  DevExpress VCL Dashboards - Store Dashboard Layouts in a Database 
+description: "DevExpress Dashboards for Delphi/C++Builder - Store Dashboard Layouts and User Interaction State in a Database"
