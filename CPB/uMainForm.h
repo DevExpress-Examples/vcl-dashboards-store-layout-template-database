@@ -45,6 +45,12 @@
 #include "dxAI.Commands.SmartPaste.hpp"
 #include "dxAI.hpp"
 #include "cxTextEdit.hpp"
+#include "cxColorComboBox.hpp"
+#include "cxContainer.hpp"
+#include "cxDBColorComboBox.hpp"
+#include "cxDropDownEdit.hpp"
+#include "cxMaskEdit.hpp"
+#include "dxLayoutcxEditAdapters.hpp"
 //---------------------------------------------------------------------------
 class TMainForm : public TForm
 {
@@ -67,7 +73,7 @@ __published:	// IDE-managed Components
 	TdxLayoutItem *liBtnNew;
 	TdxLayoutGroup *lgButtons;
 	TdxLayoutItem *liBtnDelete;
-	TdxReport *dxReport1;
+	TcxGridDBColumn *gvLayoutsState;
 	void __fastcall btnNewDashboardClick(TObject *Sender);
 	void __fastcall btnDeleteClick(TObject *Sender);
 	void __fastcall btnDesignClick(TObject *Sender);

@@ -40,6 +40,12 @@
 #pragma link "dxAI"
 #pragma link "dxAI.Commands.SmartPaste"
 #pragma link "cxTextEdit"
+#pragma link "cxColorComboBox"
+#pragma link "cxContainer"
+#pragma link "cxDBColorComboBox"
+#pragma link "cxDropDownEdit"
+#pragma link "cxMaskEdit"
+#pragma link "dxLayoutcxEditAdapters"
 #pragma resource "*.dfm"
 TMainForm *MainForm;
 //---------------------------------------------------------------------------
