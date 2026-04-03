@@ -26,7 +26,6 @@ __published:	// IDE-managed Components
 	TdxBackendDataConnectionManager *dxBackendDataConnectionManager1;
 	TdxBackendDataSetJSONConnection *RevenueByIndustryConnection;
 	TdxBackendDataSetCollectionItem *RevenueByIndustryConnectionItem1;
-	TdxSkinController *dxSkinController1;
 	TdxMemData *mdRevenueByIndustry;
 	TStringField *mdRevenueByIndustryCity;
 	TStringField *mdRevenueByIndustryIndustry;

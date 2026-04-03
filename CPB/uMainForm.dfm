@@ -65,16 +65,23 @@ object MainForm: TMainForm
           DataBinding.FieldName = 'RecId'
           Visible = False
         end
-        object gvLayoutsLayout: TcxGridDBColumn
-          Caption = 'Report Layout'
-          DataBinding.FieldName = 'Layout'
-          Options.Editing = False
-        end
         object gvLayoutsName: TcxGridDBColumn
-          Caption = 'Report Name'
+          Caption = 'Dashboard Name'
           DataBinding.FieldName = 'Name'
           PropertiesClassName = 'TcxTextEditProperties'
           Properties.OnValidate = gvLayoutsNamePropertiesValidate
+          Width = 246
+        end
+        object gvLayoutsLayout: TcxGridDBColumn
+          Caption = 'Dashboard Layout'
+          DataBinding.FieldName = 'Layout'
+          Options.Editing = False
+          Width = 275
+        end
+        object gvLayoutsColumn1: TcxGridDBColumn
+          Caption = 'Dashboard State'
+          DataBinding.FieldName = 'State'
+          Width = 269
         end
       end
       object cxGrid2Level1: TcxGridLevel
@@ -177,9 +184,5 @@ object MainForm: TMainForm
       ControlOptions.ShowBorder = False
       Index = 2
     end
-  end
-  object dxReport1: TdxReport
-    Left = 48
-    Top = 88
   end
 end
