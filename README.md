@@ -30,7 +30,7 @@ This example application allows users to create new layouts/modify existing layo
 1.  Create additional layouts if necessary. 
 1.  Close and restart the app.
     Click on grid records to switch between dashboard layouts you set up previously.
-    Press **Design Dashboard** or **Delete Dashboard** to modify or delete entries. 
+    Click **Design Dashboard** or **Delete Dashboard** to modify or delete entries. 
 
 ![DevExpress Dashboards for Delphi/C++Builder — Store Dashboard Layout Definitions in a Database](./images/vcl-dashboards-store-layout-template-database.gif)
 
@@ -118,7 +118,7 @@ end;
 <!-- end-code-block -->
 
 To load a different dashboard in the Dashboard Control, assign a new dashboard name and layout.
-The assigned dashboard replaces the current layout definition and resets the dashboard state.
+The assigned layout definition replaces the current definition and resets the dashboard state.
 
 You can also clear the Dashboard Control using [TdxCustomDashboardControl.Clear].
 
@@ -238,7 +238,7 @@ end;
 
 -   [Introduction to DevExpress Dashboards for Delphi/C++Builder][dashboards-intro]
 -   [Tutorial: Create a dashboard using the Designer Dialog][designer]
--   [Use JSON as a data source for dashboards (as demonstrated in the current example)][json-data-source]
+-   [Reports/Dashboards for Delphi/C++Builder: Supported Database Systems][supported-dbms]
 -   [Save the dashboard layout to file on every change (code example)][save-to-file]
 -   API reference:
     -   [TdxCustomDashboardControl] (used to display a dashboard on an application form)
@@ -256,7 +256,7 @@ end;
 
 [dashboards-intro]: https://docs.devexpress.com/VCL/405642/ExpressDashboards/vcl-dashboards
 [designer]: https://docs.devexpress.com/VCL/405774/ExpressDashboards/getting-started/create-dashboard-using-designer-dialog
-[json-data-source]: https://docs.devexpress.com/VCL/405747/ExpressCrossPlatformLibrary/vcl-backend/database-engines/vcl-backend-memory-based-data-storage
+[supported-dbms]: https://docs.devexpress.com/VCL/405703/ExpressCrossPlatformLibrary/vcl-backend/vcl-backend-supported-database-systems
 [save-to-file]: https://docs.devexpress.com/VCL/dxDashboard.Control.TdxCustomDashboardControl.Layout#save-dashboard-layout-to-file-on-every-change
 [supported-dbms]: https://docs.devexpress.com/VCL/405703/ExpressCrossPlatformLibrary/vcl-backend/vcl-backend-supported-database-systems
 
