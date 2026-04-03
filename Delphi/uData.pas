@@ -15,7 +15,6 @@ type
     mdLayoutsLayout: TBlobField;
     mdLayoutsName: TWideStringField;
     dxBackendDataConnectionManager1: TdxBackendDataConnectionManager;
-    dxSkinController1: TdxSkinController;
     mdRevenueByIndustry: TdxMemData;
     mdRevenueByIndustryCity: TStringField;
     mdRevenueByIndustryIndustry: TStringField;

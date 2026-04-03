@@ -16,7 +16,6 @@ uses
 
 type
   TMainForm = class(TForm)
-    dxReport1: TdxReport;
     btnNewDashboard: TcxButton;
     btnDesign: TcxButton;
     btnDelete: TcxButton;
@@ -35,6 +34,7 @@ type
     liBtnDelete: TdxLayoutItem;
     liGrid: TdxLayoutItem;
     liDashboardControl: TdxLayoutItem;
+    gvLayoutsColumn1: TcxGridDBColumn;
     procedure btnNewDashboardClick(Sender: TObject);
     procedure btnDesignClick(Sender: TObject);
     procedure btnDeleteClick(Sender: TObject);
