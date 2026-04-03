@@ -174,12 +174,6 @@ object DataModule1: TDataModule1
       end
     end
   end
-  object dxSkinController1: TdxSkinController
-    NativeStyle = False
-    SkinName = 'WXI'
-    Left = 288
-    Top = 84
-  end
   object mdRevenueByIndustry: TdxMemData
     Active = True
     Indexes = <>
