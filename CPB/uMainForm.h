@@ -73,7 +73,6 @@ __published:	// IDE-managed Components
 	TdxLayoutItem *liBtnNew;
 	TdxLayoutGroup *lgButtons;
 	TdxLayoutItem *liBtnDelete;
-	TcxGridDBColumn *gvLayoutsState;
 	void __fastcall btnNewDashboardClick(TObject *Sender);
 	void __fastcall btnDeleteClick(TObject *Sender);
 	void __fastcall btnDesignClick(TObject *Sender);
