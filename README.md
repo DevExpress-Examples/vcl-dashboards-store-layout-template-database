@@ -29,7 +29,7 @@ This example application allows users to create new layouts/modify existing layo
 1.  Click the hamburger button, select the **Save** option, and close the dialog.
 1.  Create additional layouts if necessary. 
 1.  Close and restart the app.
-    Click on grid records to switch between dashboard layouts you set up previously.
+1.  Click on grid records to switch between dashboard layouts you set up previously.
     Click **Design Dashboard** or **Delete Dashboard** to modify or delete entries. 
 
 ![DevExpress Dashboards for Delphi/C++Builder — Store Dashboard Layout Definitions in a Database](./images/vcl-dashboards-store-layout-template-database.gif)
@@ -113,6 +113,8 @@ begin
   // Load a dashboard state if it is stored in the database
   if not DataModule1.mdLayoutsState.IsNull then
     dxDashboardControl1.State.Assign(DataModule1.mdLayoutsState);
+  // Activate the dashboard control
+  dxDashboardControl1.Active := True;
 end;
 ```
 <!-- end-code-block -->
@@ -121,7 +123,17 @@ To load a different dashboard in the Dashboard Control, assign a new dashboard n
 The assigned layout definition replaces the current definition and resets the dashboard state.
 
 You can also clear the Dashboard Control using [TdxCustomDashboardControl.Clear].
+The `Clear` function disables the `TdxCustomDashboardControl.Active` property.
+Once you assign a new dashboard layout (and, optionally, a UI interaction state),
+you must activate the dashboard control.
 
+
+<!-- start-code-block -->
+#### Delphi
+```delphi
+  dxDashboardControl1.Active := True;
+```
+<!-- end-code-block -->
 
 ### Step 3: Display the Dashboard Designer
 
