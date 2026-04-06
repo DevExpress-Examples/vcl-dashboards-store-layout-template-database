@@ -82,6 +82,8 @@ begin
   dxDashboardControl1.Layout.Assign(DataModule1.mdLayoutsLayout);
   if not DataModule1.mdLayoutsState.IsNull then
     dxDashboardControl1.State.Assign(DataModule1.mdLayoutsState);
+  
+  dxDashboardControl1.Active := True;
 end;
 
 procedure TMainForm.btnDeleteClick(Sender: TObject);
@@ -131,6 +133,7 @@ end;
 procedure TMainForm.dxDashboardControl1LayoutChanged(
   ASender: TdxCustomDashboardControl);
 begin
+  dxDashboardControl1.Active := True;
   if DataModule1.mdLayoutsName.AsString <> dxDashboardControl1.DashboardName then
   begin
     DataModule1.mdLayouts.Append;
