@@ -74,6 +74,8 @@ void __fastcall TMainForm::LoadLayoutAndState()
 
     if (!DataModule1->mdLayoutsState->IsNull)
         dxDashboardControl1->State->Assign(DataModule1->mdLayoutsState);
+
+	dxDashboardControl1->Active = true;
 }
 //---------------------------------------------------------------------------
 void __fastcall TMainForm::btnDeleteClick(TObject *Sender)
@@ -123,13 +125,14 @@ void __fastcall TMainForm::gvLayoutsFocusedRecordChanged(
         (DataModule1->mdLayouts->State != dsInsert))
     {
         LoadLayoutAndState();
-    }
+	}
 }
 //---------------------------------------------------------------------------
 
 void __fastcall TMainForm::dxDashboardControl1LayoutChanged(
 	TdxCustomDashboardControl *ASender)
 {
+    dxDashboardControl1->Active = true;
 	if (DataModule1->mdLayoutsName->AsString != dxDashboardControl1->DashboardName)
 	{
 		DataModule1->mdLayouts->Append();
