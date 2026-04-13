@@ -123,7 +123,7 @@ To load a different dashboard in the Dashboard Control, assign a new dashboard n
 The assigned layout definition replaces the current definition and resets the dashboard state.
 
 You can also clear the Dashboard Control using [TdxCustomDashboardControl.Clear].
-The `Clear` function disables the `TdxCustomDashboardControl.Active` property.
+The `Clear` function disables the [TdxCustomDashboardControl.Active] property.
 Once you assign a new dashboard layout (and, optionally, a UI interaction state),
 you must activate the dashboard control.
 
@@ -274,6 +274,7 @@ end;
 
 <!-- reference links -->
 [TdxCustomDashboardControl]: https://docs.devexpress.com/VCL/dxDashboard.Control.TdxCustomDashboardControl
+[TdxCustomDashboardControl.Active]: https://docs.devexpress.com/VCL/dxDashboard.Control.TdxCustomDashboardControl.Active
 [TdxCustomDashboardControl.Clear]: https://docs.devexpress.com/VCL/dxDashboard.Control.TdxCustomDashboardControl.Clear
 [TdxCustomDashboardControl.DashboardName]: https://docs.devexpress.com/VCL/dxDashboard.Control.TdxCustomDashboardControl.Layout
 [TdxCustomDashboardControl.Layout]: https://docs.devexpress.com/VCL/dxDashboard.Control.TdxCustomDashboardControl.Layout
