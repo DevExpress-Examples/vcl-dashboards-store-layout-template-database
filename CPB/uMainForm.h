@@ -91,7 +91,7 @@ __published:	// IDE-managed Components
 
 
 private:	// User declarations
-	void LoadLayoutAndState();
+	void __fastcall LoadLayoutAndState();
 public:		// User declarations
 	__fastcall TMainForm(TComponent* Owner);
 };

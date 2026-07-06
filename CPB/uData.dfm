@@ -1,9 +1,8 @@
 object DataModule1: TDataModule1
   OnCreate = DataModuleCreate
   OnDestroy = DataModuleDestroy
-  Height = 374
-  Width = 555
-  PixelsPerInch = 144
+  Height = 249
+  Width = 370
   object mdLayouts: TdxMemData
     Active = True
     Indexes = <>
@@ -147,8 +146,8 @@ object DataModule1: TDataModule1
       73223A5B5D7D2C226C697374426F78496E647573747279223A7B224D61737465
       7246696C74657256616C756573223A5B5D7D7D7D}
     SortOptions = []
-    Left = 378
-    Top = 84
+    Left = 252
+    Top = 56
     object mdLayoutsLayout: TBlobField
       FieldName = 'Layout'
     end
@@ -161,12 +160,12 @@ object DataModule1: TDataModule1
   end
   object dsLayouts: TDataSource
     DataSet = mdLayouts
-    Left = 198
-    Top = 78
+    Left = 132
+    Top = 52
   end
   object dxBackendDataConnectionManager1: TdxBackendDataConnectionManager
-    Left = 108
-    Top = 78
+    Left = 72
+    Top = 52
     object RevenueByIndustryConnection: TdxBackendDataSetJSONConnection
       object RevenueByIndustryConnectionItem1: TdxBackendDataSetCollectionItem
         DataSet = mdRevenueByIndustry
@@ -3101,8 +3100,8 @@ object DataModule1: TDataModule1
       00546974757376696C6C65010600000052657461696C01020000005041013542
       3F53AFD1444001ACE63922DFEB53C00100000000C05C5541}
     SortOptions = []
-    Left = 114
-    Top = 174
+    Left = 76
+    Top = 116
     object mdRevenueByIndustryCity: TStringField
       FieldName = 'City'
     end

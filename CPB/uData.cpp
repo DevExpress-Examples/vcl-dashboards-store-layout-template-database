@@ -25,18 +25,18 @@
 #pragma resource "*.dfm"
 TDataModule1 *DataModule1;
 //---------------------------------------------------------------------------
-const String DataFileName = "data.dat";
+const System::WideChar* const DataFileName = L"data.dat";
 
 
 __fastcall TDataModule1::TDataModule1(TComponent* Owner)
-	: TDataModule(Owner)
+    : TDataModule(Owner)
 {
 }
 //---------------------------------------------------------------------------
 void __fastcall TDataModule1::DataModuleCreate(TObject *Sender)
 {
     if (FileExists(DataFileName))
-		mdLayouts->LoadFromBinaryFile(DataFileName);
+        mdLayouts->LoadFromBinaryFile(DataFileName);
 }
 //---------------------------------------------------------------------------
 

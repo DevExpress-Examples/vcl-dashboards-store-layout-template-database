@@ -20,8 +20,6 @@ object MainForm: TMainForm
     Align = alClient
     TabOrder = 0
     AutoSize = True
-    ExplicitWidth = 837
-    ExplicitHeight = 519
     object btnDesign: TcxButton
       Left = 287
       Top = 12

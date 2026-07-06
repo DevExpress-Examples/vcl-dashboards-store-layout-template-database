@@ -50,7 +50,7 @@
 TMainForm *MainForm;
 //---------------------------------------------------------------------------
 __fastcall TMainForm::TMainForm(TComponent* Owner)
-	: TForm(Owner)
+    : TForm(Owner)
 {
 
 }
@@ -62,7 +62,7 @@ void __fastcall TMainForm::FormCreate(TObject *Sender)
  //---------------------------------------------------------------------------
 void __fastcall TMainForm::LoadLayoutAndState()
 {
-	if ((DataModule1->mdLayouts->RecordCount == 0) &&
+    if ((DataModule1->mdLayouts->RecordCount == 0) &&
         (DataModule1->mdLayouts->State != dsInsert))
     {
         dxDashboardControl1->Clear();
@@ -75,7 +75,7 @@ void __fastcall TMainForm::LoadLayoutAndState()
     if (!DataModule1->mdLayoutsState->IsNull)
         dxDashboardControl1->State->Assign(DataModule1->mdLayoutsState);
 
-	dxDashboardControl1->Active = true;
+    dxDashboardControl1->Active = true;
 }
 //---------------------------------------------------------------------------
 void __fastcall TMainForm::btnDeleteClick(TObject *Sender)
@@ -95,17 +95,17 @@ void __fastcall TMainForm::btnNewDashboardClick(TObject *Sender)
 }
 //---------------------------------------------------------------------------
 void __fastcall TMainForm::gvLayoutsNamePropertiesValidate(TObject *Sender, TcxEditValue &DisplayValue,
-		  TCaption &ErrorText, bool &Error)
+    TCaption &ErrorText, bool &Error)
 {
-	if (DisplayValue == "")
-	{
-		Error = true;
-		ErrorText = L"Dashboard name cannot be blank.";
-	}
+    if (DisplayValue == "")
+    {
+        Error = true;
+        ErrorText = L"Dashboard name cannot be blank.";
+    }
 }
 //---------------------------------------------------------------------------
 void __fastcall TMainForm::gvLayoutsEditValueChanged(TcxCustomGridTableView *Sender,
-		  TcxCustomGridTableItem *AItem)
+    TcxCustomGridTableItem *AItem)
 {
     if (AItem == gvLayoutsName)
         dxDashboardControl1->DashboardName = AItem->EditValue;
@@ -115,7 +115,7 @@ void __fastcall TMainForm::gvLayoutsEditValueChanged(TcxCustomGridTableView *Sen
 void __fastcall TMainForm::gvLayoutsFocusedRecordChanged(
     TcxCustomGridTableView *Sender,
     TcxCustomGridRecord *APrevFocusedRecord,
-	TcxCustomGridRecord *AFocusedRecord,
+    TcxCustomGridRecord *AFocusedRecord,
     bool ANewItemRecordFocusingChanged)
 {
     if (AFocusedRecord == nullptr)
@@ -125,32 +125,32 @@ void __fastcall TMainForm::gvLayoutsFocusedRecordChanged(
         (DataModule1->mdLayouts->State != dsInsert))
     {
         LoadLayoutAndState();
-	}
+    }
 }
 //---------------------------------------------------------------------------
 
 void __fastcall TMainForm::dxDashboardControl1LayoutChanged(
-	TdxCustomDashboardControl *ASender)
+    TdxCustomDashboardControl *ASender)
 {
     dxDashboardControl1->Active = true;
-	if (DataModule1->mdLayoutsName->AsString != dxDashboardControl1->DashboardName)
-	{
-		DataModule1->mdLayouts->Append();
-		DataModule1->mdLayoutsName->AsString = dxDashboardControl1->DashboardName;
-	}
-	else
-		DataModule1->mdLayouts->Edit();
+    if (DataModule1->mdLayoutsName->AsString != dxDashboardControl1->DashboardName)
+    {
+        DataModule1->mdLayouts->Append();
+        DataModule1->mdLayoutsName->AsString = dxDashboardControl1->DashboardName;
+    }
+    else
+        DataModule1->mdLayouts->Edit();
 
-	DataModule1->mdLayoutsLayout->Assign(dxDashboardControl1->Layout);
-	DataModule1->mdLayouts->Post();
+    DataModule1->mdLayoutsLayout->Assign(dxDashboardControl1->Layout);
+    DataModule1->mdLayouts->Post();
 }
 //---------------------------------------------------------------------------
 void __fastcall TMainForm::dxDashboardControl1StateChanged(
-	TdxCustomDashboardControl *ASender)
+    TdxCustomDashboardControl *ASender)
 {
-	DataModule1->mdLayouts->Edit();
-	DataModule1->mdLayoutsState->Assign(dxDashboardControl1->State);
-	DataModule1->mdLayouts->Post();
+    DataModule1->mdLayouts->Edit();
+    DataModule1->mdLayoutsState->Assign(dxDashboardControl1->State);
+    DataModule1->mdLayouts->Post();
 }
 
 //---------------------------------------------------------------------------
