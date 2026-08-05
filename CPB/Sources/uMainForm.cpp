@@ -74,8 +74,6 @@ void __fastcall TMainForm::LoadLayoutAndState()
 
     if (!DataModule1->mdLayoutsState->IsNull)
         dxDashboardControl1->State->Assign(DataModule1->mdLayoutsState);
-
-    dxDashboardControl1->Active = true;
 }
 //---------------------------------------------------------------------------
 void __fastcall TMainForm::btnDeleteClick(TObject *Sender)

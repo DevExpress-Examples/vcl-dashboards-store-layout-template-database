@@ -82,8 +82,6 @@ begin
   dxDashboardControl1.Layout.Assign(DataModule1.mdLayoutsLayout);
   if not DataModule1.mdLayoutsState.IsNull then
     dxDashboardControl1.State.Assign(DataModule1.mdLayoutsState);
-  
-  dxDashboardControl1.Active := True;
 end;
 
 procedure TMainForm.btnDeleteClick(Sender: TObject);
