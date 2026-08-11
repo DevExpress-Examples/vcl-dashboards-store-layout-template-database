@@ -89,7 +89,7 @@ To configure a dashboard data source in your project, refer to the following tut
     Alternatively, you can use the Dashboard Designer later to import dashboard data from an XML file.
 
 
-## Step 2: Load a Dashboard Layout Definition
+### Step 2: Load a Dashboard Layout Definition
 
 To load a layout definition to the Dashboard Control ([TdxCustomDashboardControl]), you must specify
 dashboard name ([TdxCustomDashboardControl.DashboardName]), layout ([TdxCustomDashboardControl.Layout]),
@@ -113,27 +113,12 @@ begin
   // Load a dashboard state if it is stored in the database
   if not DataModule1.mdLayoutsState.IsNull then
     dxDashboardControl1.State.Assign(DataModule1.mdLayoutsState);
-  // Activate the dashboard control
-  dxDashboardControl1.Active := True;
 end;
 ```
 <!-- end-code-block -->
 
 To load a different dashboard in the Dashboard Control, assign a new dashboard name and layout.
 The assigned layout definition replaces the current definition and resets the dashboard state.
-
-You can also clear the Dashboard Control using [TdxCustomDashboardControl.Clear].
-The `Clear` function disables the [TdxCustomDashboardControl.Active] property.
-Once you assign a new dashboard layout (and, optionally, a UI interaction state),
-you must activate the dashboard control.
-
-
-<!-- start-code-block -->
-#### Delphi
-```delphi
-  dxDashboardControl1.Active := True;
-```
-<!-- end-code-block -->
 
 ### Step 3: Display the Dashboard Designer
 
